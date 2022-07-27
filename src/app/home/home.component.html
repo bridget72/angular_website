@@ -1,65 +1,85 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bridget Liu</title>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
 
 <section class="hero is-bold is-fullheight">
+
+    <nav class="navbar-end box0" role="navigation" aria-label="main navigation">
+        <div class="navbar box0">
+      
+            <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+      
+        <div  class="navbar-menu box0">
+            <div class="navbar-end box0">
+      
+                <a class="navbar-item" routerLink="/">Home</a>
+                    <a class="navbar-item" routerLink="/contact">Contact</a>
+                    <a class="navbar-item" routerLink="/projects">Projects</a>
+                    <hr class="navbar-divider">
+                    <!-- <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                        More
+                      </a>
+              
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item">About</a>
+                        <a class="navbar-item"></a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">Report an issue</a>
+                      </div>
+                    </div> -->
+            </div>
+      
+        </div>
+      </nav>
+
+
+
+
     <!-- intro part -->
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h1 class="title" style="text-align:left">
+            <h3 class="title is-3" style="text-align:left">
                 <span typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="1000"
                     (complete)="onTypingAnimationComplete()" [hideCursorOnComplete]="true">
                     Hii, it's Bridget.
                 </span>
-            </h1>
-            <h1 class="title" style="text-align:left">
+            </h3>
+            <h2 class="title is-4" style="text-align:left">
                 <span typingAnimation [typeSpeed]="50" [condition]="start2" [startDelay]="1000"
                     (complete)="onTypingAnimationComplete2()" [hideCursorOnComplete]="true">
                     I'm a second year master student at McGill University.
                 </span>
-            </h1>
-            <h1 class="title" style="text-align:left">
+            </h2>
+            <h2 class="title is-4" style="text-align:left">
                 <span typingAnimation [typeSpeed]="50" [condition]="start3" [startDelay]="1000"
                     (complete)="onTypingAnimationComplete3()">
                     Bare with me as this website is still under construction 🐣.
                 </span>
-            </h1>
+            </h2>
         </div>
     </div>
 
-    <div class="section box1 is-medium has-text-centered">
+    <!-- <div class="section box1 is-medium has-text-centered">
         <div class="container has-text-centered">
             <p>hi</p>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot box2">
+    <div class="hero-foot box0 is-small">
         <nav class="tabs">
             <div class="container is-primary">
 

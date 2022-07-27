@@ -1,6 +1,6 @@
 
-@import "../../../node_modules/bulma/sass/utilities/initial-variables";
-@import "../../../node_modules/bulma/sass/utilities/functions";
+
+
 // /Users/bridgetliu/personal-website/node_modules/bulma
 // /Users/bridgetliu/personal-website/src/app/home/home.component.scss
 
@@ -9,6 +9,24 @@ $color1 :#FCFDAF;
 $color2 :#EFD780;
 $color3 :#DBA159;
 $color4 :#D0E3CC;
+
+$navbar-background-color: $color3;
+$navbar-item-hover-background-color: $color2;
+// toggle menu icon color 
+$navbar-burger-color: $color3;
+// $navbar-background-color: rgba($color4, 0);
+$navbar-box-shadow-color: $color3;
+$navbar-item-hover-color: black;
+$navbar-divider-height: 10px;
+
+// $navbar-item-active-background-color: $color3;
+// $navbar-burger-color: $color3;
+// $navbar-burger-color: $color3;
+// $navbar-tab-hover-background-color: $color3;
+
+
+
+
 .hero{
     // background-image: url('../../assets/img/bg3.jpg') !important;
     background-color: $color0 !important;
@@ -97,7 +115,7 @@ body {
     height: $social-button-size;
     text-decoration: none;
     border-radius: 100%;
-    background: rgba(#fff, 0.7);
+    background: rgba($color4, 0.5);
     text-align: center;
   
     &::after {
@@ -150,3 +168,10 @@ body {
     }
   }
   
+
+  @import "../../../node_modules/bulma/bulma.sass"; 
+
+
+
+// /Users/bridgetliu/personal-website/node_modules/bulma
+// /Users/bridgetliu/personal-website/src/app/home/home.component.scss
