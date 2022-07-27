@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TypingAnimationModule } from 'node_modules/angular-typing-animation'
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,14 +25,14 @@ import {
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    TypingAnimationModule
+    TypingAnimationModule,
   ],
   exports:[
   ],
