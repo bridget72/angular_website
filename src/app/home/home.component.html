@@ -1,9 +1,77 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <section class="hero is-primary is-bold is-fullheight">
     <div class="hero-body">
         <div class="container has-text-centered">
-            <h1 class="title">
-                Home Page!
+            <h1 class="title" style="text-align:left">
+                <span 
+                    typingAnimation 
+                    [typeSpeed]="50" 
+                    [condition]="start" 
+                    [startDelay]="1000" 
+                    (complete)="onTypingAnimationComplete()"
+                    [hideCursorOnComplete]="true">
+                    Hii, it's Bridget.
+                    </span>
+
+
+            </h1>
+            <h1 class="title" style="text-align:left">
+                <span 
+                    typingAnimation 
+                    [typeSpeed]="50" 
+                    [condition]="start2" 
+                    [startDelay]="1000" 
+                    (complete)="onTypingAnimationComplete2()"
+                    [hideCursorOnComplete]="true"
+                    >
+                    I'm a second year master student at McGill University.
+                </span>
+            </h1>
+
+            <h1 class="title" style="text-align:left">
+                <span 
+                    typingAnimation 
+                    [typeSpeed]="50" 
+                    [condition]="start3" 
+                    [startDelay]="1000" 
+                    (complete)="onTypingAnimationComplete3()"
+                    >
+                    Bare with me as this website is still under construction 🐣.
+                </span>
             </h1>
         </div>
+        
     </div>
-  </section>
+
+<!-- Hero footer: will stick at the bottom -->
+<div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a href="https://www.facebook.com/bridget.liu.72"></a></li>
+          <li><a>Grid</a></li>
+          <li><a>Elements</a></li>
+          <li><a>Components</a></li>
+          <li><a>Layout</a></li>
+          <a href="#" class="fa fa-facebook"></a>
+
+        </ul>
+      </div>
+    </nav>
+</div>
+    <div class="flex-center">
+        <i class="fa fa-github fa-4x icon-3d"></i>
+        <i class="fa fa-gitlab fa-4x icon-3d"></i>
+        <i class="fa fa-bitbucket fa-4x icon-3d"></i>
+        <i class="fa fa-git fa-4x icon-3d"></i>
+      </div>
+      
+      <div class="flex-center">
+        <i class="fa fa-twitter fa-4x icon-3d"></i>
+        <i class="fa fa-facebook fa-4x icon-3d"></i>
+        <i class="fa fa-instagram fa-4x icon-3d"></i>
+        <i class="fa fa-whatsapp fa-4x icon-3d"></i>
+      </div>
+</section>

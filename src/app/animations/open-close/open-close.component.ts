@@ -7,14 +7,14 @@ import { trigger, transition, state, animate, style, AnimationEvent } from '@ang
     trigger('openClose', [
       // ...
       state('open', style({
-        height: '200px',
+        height:'600px',
         opacity: 1,
-        backgroundColor: 'yellow'
+        backgroundColor: '#EDEEC9'
       })),
       state('closed', style({
-        height: '100px',
+        height: '300px',
         opacity: 0.8,
-        backgroundColor: 'blue'
+        backgroundColor: '#DDE7C7'
       })),
       transition('open => closed', [
         animate('1s')
@@ -46,7 +46,7 @@ import { trigger, transition, state, animate, style, AnimationEvent } from '@ang
 })
 export class OpenCloseComponent {
   @Input() logging = false;
-  isOpen = true;
+  isOpen = false;
 
   toggle() {
     this.isOpen = !this.isOpen;

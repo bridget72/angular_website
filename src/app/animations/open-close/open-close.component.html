@@ -1,10 +1,20 @@
-<button type="button" (click)="toggle()">Toggle Open/Close</button>
+
 
 <div [@openClose]="isOpen ? 'open' : 'closed'"
   (@openClose.start)="onAnimationEvent($event)"
   (@openClose.done)="onAnimationEvent($event)"
-  class="open-close-container">
-  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+  class="hero is-primary is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <button class="button is-ghost" type="button" (click)="toggle()">
+          The box is now {{ isOpen ? 'Open' : 'Closed' }}
+        </button>
+      </div>
+  </div>
+    <!-- <button class="button is-ghost" type="button" (click)="toggle()">
+      The box is now {{ isOpen ? 'Open' : 'Closed' }}
+    </button> -->
+  
 </div>
 
 
