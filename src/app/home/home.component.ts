@@ -10,23 +10,22 @@ export class HomeComponent implements OnInit {
   start: boolean = false
   start2: boolean = false
   start3: boolean = false
+  start4: boolean = false
+
+  toggle() {}
+
   ngOnInit () {
     // Start after 1 second + 1 second of startDelay
     setTimeout(() => this.start = true, 1000)
   }
   onTypingAnimationComplete () {
     console.log('#TYPING ANIMATION COMPLETE')
+    setTimeout(() => this.start = true, 1000)
     this.start2 = true
-    // ...
   }
-  onTypingAnimationComplete2 () {
-    console.log('#SECOND LINE COMPLETE')
-    this.start3 = true
-    // ...
-  }
-  onTypingAnimationComplete3 () {
-    console.log('#THIRD LINE COMPLETE')
-    // ...
+
+  onWaitComplete() {
+    this.start3 = true;
   }
 }
 

@@ -19,13 +19,15 @@ import {
   transition,
 
 } from '@angular/animations';
+import { ResearchComponent } from './research/research.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ResearchComponent
   ],
   imports: [
     BrowserModule,
