@@ -3,7 +3,7 @@
 <div [@openClose]="isOpen ? 'open' : 'closed'"
   (@openClose.start)="onAnimationEvent($event)"
   (@openClose.done)="onAnimationEvent($event)"
-  class="hero is-primary is-primary">
+  class="hero">
     <div class="hero-body">
       <div class="container has-text-centered">
         <button class="button is-ghost" type="button" (click)="toggle()">
@@ -11,9 +11,6 @@
         </button>
       </div>
   </div>
-    <!-- <button class="button is-ghost" type="button" (click)="toggle()">
-      The box is now {{ isOpen ? 'Open' : 'Closed' }}
-    </button> -->
   
 </div>
 

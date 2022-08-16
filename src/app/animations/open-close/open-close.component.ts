@@ -9,22 +9,22 @@ import { trigger, transition, state, animate, style, AnimationEvent } from '@ang
       state('open', style({
         height:'600px',
         opacity: 1,
-        backgroundColor: '#EDEEC9'
+        backgroundColor: '#DABFFF'
       })),
       state('closed', style({
         height: '300px',
-        opacity: 0.8,
-        backgroundColor: '#DDE7C7'
+        opacity: 1,
+        backgroundColor: '#7FDEFF'
       })),
       transition('open => closed', [
-        animate('1s')
+        animate('0.5s')
       ]),
       transition('closed => open', [
         animate('0.5s')
       ]),
-      transition('* => closed', [
-        animate('1s')
-      ]),
+      // transition('* => closed', [
+      //   animate('1s')
+      // ]),
       transition('* => open', [
         animate('0.5s')
       ]),
@@ -32,13 +32,13 @@ import { trigger, transition, state, animate, style, AnimationEvent } from '@ang
         animate('0.5s')
       ]),
       transition ('* => open', [
-        animate ('1s',
+        animate ('0.5s',
           style ({ opacity: '*' }),
         ),
       ]),
-      transition('* => *', [
-        animate('1s')
-      ]),
+      // transition('* => *', [
+      //   animate('1s')
+      // ]),
     ]),
   ],
   templateUrl: './open-close.component.html',
