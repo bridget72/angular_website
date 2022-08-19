@@ -2,58 +2,104 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Bulma - Tabs</title>
+        <title>My research</title>
         <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
         <!-- Bulma Version 0.9.0-->
         <link rel='stylesheet prefetch' href='https://unpkg.com/bulma@0.9.0/css/bulma.min.css'>
         <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">
-    
-            <section class="box" >
-                  <section class="hero is-dark">
-                      <div class="hero-body">
-                        <div class="container has-text-centered">
-                            <h1 class="title">
-                                head title here
-                            </h1>
+        <section class="hero is-medium">
+            <nav class="navbar-end box0" role="navigation" aria-label="main navigation">
+                <div class="navbar box0">
+                    <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div  class="navbar-menu box0">
+                    <div class="navbar-end box0">
+                        <a class="navbar-item" routerLink="/">Home</a>
+                            <a class="navbar-item" href="../../assets/resume.pdf"title="Bridget Liu's Resume">Resume </a>
+                            <a class="navbar-item" routerLink="/research">Research</a>
+                            <a class="navbar-item" routerLink="/projects">Projects</a>
+                            <hr class="navbar-divider">
+                    </div>
+                </div>
+              </nav>
+              <div class="hero-body">
+                <div class="container">
+                    <h3 class="title is-1" style="text-align:left">
+                       Research
+                    </h3>
+                    <hr class="content-divider">
+                    <h4 class="subtitle">
+                        My research mainly involves image segmentation and anlysis on nervous tissue, on both light-microscopy and FIB-SEM level. <br>
+                        Instead of directly employ the recent deep learning algorithms, we go back to the traditional methods 
+                        that take intensity and shape into consideration more intuitively.
+                    </h4>                   
+                    <!-- <div class="columns is-multiline">
+                        <div class="column post is-6">
+                            <div [@openClose]="isOpen ? 'open' : 'closed'"
+                            (@openClose.start)="onAnimationEvent($event)"
+                            (@openClose.done)="onAnimationEvent($event)"
+                            class="hero">
+                            <button class="button" type="button" (click)="toggle()">
+                                But why not deep learning? 
+                             </button>
+                            </div>
                         </div>
-                      </div> 
-        
+                        <div class="column post is-6">
+                            <div [@openClose]="isOpen1 ? 'open' : 'closed'"
+                            (@openClose.start)="onAnimationEvent($event)"
+                            (@openClose.done)="onAnimationEvent($event)"
+                            class="hero">
+                            <button class="button is-ghost" type="button" (click)="toggle1()">
+                                But why not deep learning? 
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section id="parallax-1" class="hero ">
                       <div class="hero-foot">
-                          <nav class="tabs is-boxed is-fullwidth is-medium">
+                          <nav class="tabs is-boxed is-centered is-active is-medium">
                               <div class="container">
                               <ul>
-                                  <li class="tab is-active" (click)="openTab($event, 'id_tab_1')"><a >tab 1 title</a></li>
-                                  <li class="tab" (click)="openTab($event, 'id_tab_2')"><a >tab 2 title</a></li>
-                                  <li class="tab" (click)="openTab($event, 'id_tab_3')"><a >tab 3 title</a></li>
+                                  <li class="tab is-active" (click)="openTab($event, 'id_tab_1')"><a >Motivation</a></li>
+                                  <li class="tab" (click)="openTab($event, 'id_tab_2')"><a >Method</a></li>
+                                  <li class="tab" (click)="openTab($event, 'id_tab_3')"><a >Results</a></li>
                               </ul>
                               </div>
+   
                           </nav>
                       </div>
-                  </section>        
-                  <div class="container section">
-                      <div id="id_tab_1" class="content-tab">
-                          <div>
-                              content here
-                          </div>
-                      </div>
-                      <div id="id_tab_2" class="content-tab" style="display:none">
-                          <div>
-                              1
-                          </div>
-                      </div>
-                      <div id="id_tab_3" class="content-tab" style="display:none">
-                          <div>
-                             2
-                          </div>
-                      </div>
-                  </div>
-              </section>
-        </div>
-        <script>
-           
-        </script>
+        </section>
+        <section id="parallax-2" class="hero is-large ">
+            <div class = "box">
+                <div class="hero-body section">
+                    <div id="id_tab_1" class="content-tab">
+                        <div class = "hero-body">
+                            content here
+                        </div>
+                    </div>
+                    <div id="id_tab_2" class="content-tab" style="display:none">
+                        <div>
+                            1
+                        </div>
+                    </div>
+                    <div id="id_tab_3" class="content-tab" style="display:none">
+                        <div>
+                        2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+
     </body>
 </html>

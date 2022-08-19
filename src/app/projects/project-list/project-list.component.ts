@@ -12,7 +12,7 @@ import { trigger, transition, state, animate, style, AnimationEvent } from '@ang
         backgroundColor: '#C0FDFB'
       })),
       state('closed', style({
-        height: '300px',
+        height: '100px',
         opacity: 1,
         backgroundColor: 'white'
       })),
