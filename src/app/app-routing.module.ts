@@ -1,6 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ContactComponent } from './contact/contact.component';
+import { RouterModule, Routes } from '@angular/router'
 import { HomeComponent } from './home/home.component';
 import {ResearchComponent} from './research/research.component';
 
@@ -21,7 +20,6 @@ const routes: Routes = [
     loadChildren:() => import('./projects/projects.module').then(x => x.ProjectsModule)
   },
   {
-    // for lazy loading
     path:'research',
     component: ResearchComponent
   }

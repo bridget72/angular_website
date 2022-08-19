@@ -52,6 +52,10 @@ $box-background-color: rgba(black, 0.7);
   height: 380px;
 }
 
+.crop {
+  overflow: hidden;
+}
+
 
 .box0{
     background: rgba(white, 0);
